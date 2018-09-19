@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>kiemtra</title>
+</head>
+<body>
+<input type="text" id="check">
+<input type="button" value="Submid" onclick="isNameClass()">
+<script>
+    function isNameClass() {
+        let str = document.getElementById('check').value;
+        let patterm = /^[A-Z]{1}[0-9]{4}[G-M]{1}$/;
+        if (patterm.test(str) === true){
+            alert("Name Class Validate");
+        } else {
+            alert("Name Class is Not Validate");
+        }
+    }
+</script>
+</body>
+</html>
